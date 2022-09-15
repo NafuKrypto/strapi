@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motors",
+  "info": {
+    "singularName": "motor",
+    "pluralName": "motors",
+    "displayName": "motor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    }
+  }
+}
