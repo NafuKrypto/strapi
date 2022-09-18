@@ -3,7 +3,8 @@ module.exports = ({ env }) => ({
     connection: {
         client: 'postgres',
         connection: {
-            host: env('DATABASE_HOST', 'localhost'),
+            // setting localhost2 doesnt cause any issues f 
+            host: env('DATABASE_HOST', 'localhost2'),
             port: env.int('DATABASE_PORT', 5433),
             database: env('DATABASE_NAME', 'strapi'),
             user: env('DATABASE_USERNAME', 'postgres'),

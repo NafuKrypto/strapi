@@ -12,11 +12,63 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Title": {
       "type": "string",
       "required": true,
       "maxLength": 71,
       "minLength": 3
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Tshirt",
+        "Mug",
+        "Hoodies",
+        "Stickers"
+      ],
+      "default": "Tshirt",
+      "required": true
+    },
+    "Size": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "Black",
+        "White"
+      ],
+      "required": true
+    },
+    "Pric": {
+      "type": "integer",
+      "required": true
+    },
+    "AvailableQty": {
+      "type": "integer",
+      "default": 0,
+      "required": true
     }
   }
 }
